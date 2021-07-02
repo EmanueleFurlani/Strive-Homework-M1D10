@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <!-- 1) Create a title for the page -->
+
+    <title>EXERCISES</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container border">
+
+      <!-- 2) Create a heading -->
+
+      <h2 class="heading" onclick="changeHeading()">EXERCISES</h2>
+
+      <!-- 3) Create an ordered list -->
+      <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+      </ol>
+
+      <!-- 4) Create a table with 5 columns and 4 rows -->
+      <!-- 5) Add an image to each second cell of every row -->
+      <!-- 6) Add a anchor link for every image -->
+      <!-- 7) Merge together 2 table cells -->
+      <button onclick="addNewClass()">Click for change color rows</button>
+      <table>
+        <thead>
+          <th>Item 1</th>
+          <th>Item 2</th>
+          <th>Item 3</th>
+          <th>Item 4</th>
+          <th>Item 5</th>
+        </thead>
+        <tbody id="tb">
+          <tr id="tr">
+            <td colspan="2"><a href="#">Item 1</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+            <td><a href="#">Item 2</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><a href="#">Item 2</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+            <td><a href="#">Item 2</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><a href="#">Item 3</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+            <td><a href="#">Item 3</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><a href="#">Item 4</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+            <td><a href="#">Item 4</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><a href="#">Item 5</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+            <td><a href="#">Item 5</a></td>
+            <td><a href="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300"/></a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- 8) Divide the page using a horizontal line -->
+
+      <hr />
+
+      <!-- 9) Create a container with a nested paragraph and a nested unordered list -->
+
+      <div class="container">
+        <p class="text">this is the paragraph!</p>
+        <ul>
+          <li>list 1</li>
+          <li>list 2</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 10) Create a footer with some information about the page creator -->
+
+    <footer><h3 class="hidden">Emanuele did it</h3></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+        
+        
+        
+        
+        
+        
+       <!-- HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded corners
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) )
+
+        JS EXERCISES
+
+        21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such name, surname, email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to each row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list -->
