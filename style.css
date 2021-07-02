@@ -77,5 +77,8 @@ footer {
     color: brown;
 }
 .test {
-    color: brown;
+    color: rgb(238, 17, 17);
+}
+.test1 {
+    color: rgb(238, 17, 17);
 }

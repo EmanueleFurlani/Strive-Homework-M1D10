@@ -69,11 +69,11 @@ function whoGreater(arr1, arr2) {
 }
 console.log(whoGreater([2, 23, 43, 2], [1, 3, 10]));
 
-// 31) Get element with ID "container" from the page
+//  31) Get element with ID "container" from the page
 
 const containerId = document.getElementById("container")
 
-// 33) Create a cycle that prints the text inside every td of the page
+//  33) Create a cycle that prints the text inside every td of the page
 
 //  34) Write a function to change the heading of the page
 
@@ -82,16 +82,48 @@ const changeHeading = function() {
     element.classList.toggle("h2style")
 }
 
-// 35) Write a function to add an extra row to the table
+//  35) Write a function to add an extra row to the table
 
 const addExtraRow = function(content) {
     const extraRow = document.getElementById("tr")
     extraRow.innerHTML =`<td>${content}</td>`}
     //addExtraRow("new row")
 
-// 36) Write a function to add the class "test" to each row in the table
+//  36) Write a function to add the class "test" to each row in the table
 
 const addNewClass = function() {
     const addTest =document.querySelectorAll("td")
-    addTest.classList.toggle("test")
+    addTest.classList.add("test")
 }
+//addNewClass()
+
+//  37) Write a function to add a red background to every link in the page
+
+const paintItRed = function () {
+const x = document.querySelectorAll("a");
+x.forEach((y) => {y.classList.add("test1");
+});
+};
+//paintItRed();
+
+//38) Console log "Page loaded" when the page is correctly loaded
+
+//window.onload(alert("Page loaded"))
+window.onload = function () {
+    alert("Page loaded");
+  };
+
+//39) Write a function to add new items to a UL
+
+const addToUl = function (content) {
+    const ul = document.querySelectorAll("ul")[0];
+    ul.innerHTML += `<li>${content}</li>`;
+  };
+  //addToUl("new item");
+
+  //40) Write a function to empty a list -->
+  
+  let arrList = [1, 2, 3 ,4];
+  function empty() {
+      arrList.length = 0
+  }
