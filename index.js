@@ -72,8 +72,19 @@ console.log(whoGreater([2, 23, 43, 2], [1, 3, 10]));
 //  31) Get element with ID "container" from the page
 
 const containerId = document.getElementById("container")
+//  32) Get every "td" from the page
+
+const tds = document.getElementsByTagName("td");
 
 //  33) Create a cycle that prints the text inside every td of the page
+function addTextToTD() {
+    const tds = document.getElementsByTagName("td");
+    for (let td of tds) {
+      let p = document.createElement("p");
+      p.innerText = "I am a new text";
+      td.appendChild(p);
+    }
+  }
 
 //  34) Write a function to change the heading of the page
 
@@ -122,8 +133,10 @@ const addToUl = function (content) {
   //addToUl("new item");
 
   //40) Write a function to empty a list -->
-  
-  let arrList = [1, 2, 3 ,4];
-  function empty() {
-      arrList.length = 0
+
+  const emptyList = function() {
+    const ule = document.getElementById("empty")
+    ule.innerHTML = "";
   }
+
+  //emptyList()
