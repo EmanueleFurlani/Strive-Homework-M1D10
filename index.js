@@ -1,12 +1,12 @@
 
 
-//  21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+//   21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe" - OK
 
 let x = "John";
 let y = "Doe";
 console.log(`${x} <> ${y}`);
 
-//  22) Create an object with properties such name, surname, email
+//   22) Create an object with properties such name, surname, email - OK
 
 const me = {
   name: "Emanuele",
@@ -14,10 +14,11 @@ const me = {
   email: "emanuelefurlani.go@gmail.com",
 };
 
-//  23) Delete Email from the previously created object
+//   23) Delete Email from the previously created object - OK
+
 delete me.email;
 
-//  24) Create an array with 10 strings in it
+//   24) Create an array with 10 strings in it - OK
 
 const arr = [
   "car1",
@@ -32,12 +33,13 @@ const arr = [
   "car10",
 ];
 
-//  25) Print in the console every string in the previous array
+//   25) Print in the console every string in the previous array - OK
+
 for (let array of arr) {
   console.log(array);
 }
 
-//  26) Create an array with 100 random numbers in it
+//   26) Create an array with 100 random numbers in it - OK
 
 const numArr = [];
 for (let i = 0; i < 101; i++) {
@@ -45,38 +47,41 @@ for (let i = 0; i < 101; i++) {
 }
 console.log(numArr);
 
-//  27) Wrote a function to get the MAX and the MIN from the previously created array
+//   27) Wrote a function to get the MAX and the MIN from the previously created array - OK
+
 const maxy = numArr.reduce((a, b) => (a > b ? a : b));
 console.log(maxy);
 const miny = numArr.reduce((a, b) => (a < b ? a : b));
 console.log(miny);
 
-//  28) Create an array of arrays, in which every array has 10 random numbers
+//   28) Create an array of arrays, in which every array has 10 random numbers - NOTCOMPLETED
 
-//  29) Create a function that gets 2 arrays and returns the longest one
+//   29) Create a function that gets 2 arrays and returns the longest one - OK
 
-function whichIsLonger(arr1, arr2) {
-  return arr1.length > arr2.length ? arr1 : arr2;
+function whichIsLonger(array1, array2) {
+  return array1.length > array2.length ? array1 : array2;
 }
 console.log(whichIsLonger([2, 22, 221, 3], ["23332", 33, false]));
 
-//  30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+//   30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values - OK
 
 function whoGreater(arr1, arr2) {
-  const arr1Max = arr1.reduce((a, b) => (a += b));
-  const arr2Max = arr2.reduce((a, b) => (a += b));
-  return arr1Max > arr2Max ? arr1Max : arr2Max;
+  const arr1Maxy = arr1.reduce((a, b) => (a += b));
+  const arr2Maxy = arr2.reduce((a, b) => (a += b));
+  return arr1Maxy > arr2Maxy ? arr1Maxy : arr2Maxy;
 }
-console.log(whoGreater([2, 23, 43, 2], [1, 3, 10]));
+console.log(whoGreater([2, 23, 43, 2], [1, 3, 10, 30, 30]));
 
-//  31) Get element with ID "container" from the page
+//   31) Get element with ID "container" from the page - OK
 
 const containerId = document.getElementById("container")
-//  32) Get every "td" from the page
+
+//   32) Get every "td" from the page - OK
 
 const tds = document.getElementsByTagName("td");
 
-//  33) Create a cycle that prints the text inside every td of the page
+//   33) Create a cycle that prints the text inside every td of the page - NOTWORKING
+
 function addTextToTD() {
     const tds = document.getElementsByTagName("td");
     for (let td of tds) {
@@ -86,21 +91,21 @@ function addTextToTD() {
     }
   }
 
-//  34) Write a function to change the heading of the page
+//   34) Write a function to change the heading of the page - OK
 
 const changeHeading = function() {
     let element = document.getElementsByTagName("h2")[0]
     element.classList.toggle("h2style")
 }
 
-//  35) Write a function to add an extra row to the table
+//   35) Write a function to add an extra row to the table - NOTWORKINGFINE
 
 const addExtraRow = function(content) {
     const extraRow = document.getElementById("tr")
     extraRow.innerHTML =`<td>${content}</td>`}
-    //addExtraRow("new row")
+//addExtraRow("new row")
 
-//  36) Write a function to add the class "test" to each row in the table
+//   36) Write a function to add the class "test" to each row in the table - NOTWORKING
 
 const addNewClass = function() {
     const addTest =document.querySelectorAll("td")
@@ -108,7 +113,7 @@ const addNewClass = function() {
 }
 //addNewClass()
 
-//  37) Write a function to add a red background to every link in the page
+//   37) Write a function to add a red background to every link in the page - OK
 
 const paintItRed = function () {
 const x = document.querySelectorAll("a");
@@ -117,14 +122,14 @@ x.forEach((y) => {y.classList.add("test1");
 };
 //paintItRed();
 
-//38) Console log "Page loaded" when the page is correctly loaded
+//   38) Console log "Page loaded" when the page is correctly loaded - OK
 
 //window.onload(alert("Page loaded"))
 window.onload = function () {
     alert("Page loaded");
   };
 
-//39) Write a function to add new items to a UL
+//   39) Write a function to add new items to a UL - OK 
 
 const addToUl = function (content) {
     const ul = document.querySelectorAll("ul")[0];
@@ -132,11 +137,10 @@ const addToUl = function (content) {
   };
   //addToUl("new item");
 
-  //40) Write a function to empty a list -->
+//   40) Write a function to empty a list - OK
 
   const emptyList = function() {
     const ule = document.getElementById("empty")
     ule.innerHTML = "";
   }
-
   //emptyList()
